@@ -1,6 +1,19 @@
 function average(numbers) {
-    // your code goes here
-  }
+    if (numbers === null) {
+        return null;
+    }
+    else {
+        let currentTotal = 0;
+        numbers.forEach(currentNum => {
+            currentTotal += currentNum;
+        });
+        if (currentTotal === 0) {
+            return 0;
+        }
+        else {
+            return (currentTotal / numbers.length);
+        }
+  }}
   
   /* From here down, you are not expected to 
      understand.... for now :)  
